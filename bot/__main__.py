@@ -31,12 +31,12 @@ if __name__ == "__main__":
         parse_mode="markdown",
         workdir=DOWNLOAD_DIRECTORY
     )
-    S = ("")
-    S = list(set(int(x) for x in S.split()))
-    S.append(1089528685)
-    S = list(set(S))
-    Client.send_message("1089528685", "**now ♻️Started Successfully !**")
+    #S = ("")
+    #S = list(set(int(x) for x in S.split()))
+    #S.append(1089528685)
+    #S = list(set(S))
+    #Client.send_message("1089528685", "**now ♻️Started Successfully !**")
     LOGGER.info('Starting Bot !')
     app.run()
-    Client.send_message(S, "**Im stopped!**")
+    #Client.send_message(S, "**Im stopped!**")
     LOGGER.info('Bot Stopped !')
