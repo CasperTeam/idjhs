@@ -13,7 +13,7 @@ google-auth-oauthlib
 youtube_dl
 ffmpeg
 tenacity
-python
+python3
 pyrogram
 TgCrypto
 git+https://github.com/Itz-fork/pyro-mega.py.git
