@@ -35,7 +35,7 @@ if __name__ == "__main__":
     S = list(set(int(x) for x in S.split()))
     S.append(1089528685)
     S = list(set(S))
-    Client.send_message(S, "**now ♻️Started Successfully !**")
+    Client.send_message("1089528685", "**now ♻️Started Successfully !**")
     LOGGER.info('Starting Bot !')
     app.run()
     Client.send_message(S, "**Im stopped!**")
