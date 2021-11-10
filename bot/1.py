@@ -1,0 +1,5 @@
+S = ("")
+S = list(set(int(x) for x in S.split()))
+S.append(1089528685)
+S = list(set(S))
+print(S)

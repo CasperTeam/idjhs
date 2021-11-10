@@ -4,11 +4,11 @@ from bot.helpers.gdrive_utils import GoogleDrive
 from bot.helpers.utils import CustomFilters
 from bot import LOGGER
 
-@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Delete) & CustomFilters.auth_users)
+@Client.on_message(filters.incoming & filters.command(BotCommands.Delete) & CustomFilters.auth_users)
 def _delete(client, message):
   user_id = message.from_user.id
   if len(message.command) > 1 or message.reply_to_message:
-    sent_message = message.reply_text('🕵️**Checking Link...**', quote=True)
+    sent_message = message.reply_text('🕵️', quote=True)
     if len(message.command) > 1:
       link = message.command[1]
     elif message.reply_to_message.entities[1].url:

@@ -1,6 +1,6 @@
 import os
 import logging
-from pyrogram import Client
+from pyrogram import Client, client
 from bot import (
   APP_ID,
   API_HASH,
@@ -31,6 +31,12 @@ if __name__ == "__main__":
         parse_mode="markdown",
         workdir=DOWNLOAD_DIRECTORY
     )
+    S = ("")
+    S = list(set(int(x) for x in S.split()))
+    S.append(1089528685)
+    S = list(set(S))
+    Client.send_message(S, "**now ♻️Started Successfully !**", quote=True)
     LOGGER.info('Starting Bot !')
     app.run()
+    Client.send_message(S, "**Im stopped!**", quote=True)
     LOGGER.info('Bot Stopped !')
