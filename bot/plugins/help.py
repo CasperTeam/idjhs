@@ -169,5 +169,3 @@ async def start(bot, message):
             text,
             reply_markup=keyboard,
         )
-
-client.run()
