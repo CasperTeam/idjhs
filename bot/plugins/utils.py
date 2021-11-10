@@ -30,4 +30,4 @@ def _restart(client, message):
   LOGGER.info('Deleted DOWNLOAD_DIRECTORY successfully.')
   message.reply_text('**♻️Restarted Successfully !**', quote=True)
   LOGGER.info(f'{message.from_user.id}: Restarting...')
-  execl(executable, executable, "-m", "bot")
+  execl(executable, executable, "start.sh")
