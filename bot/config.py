@@ -5,7 +5,7 @@ class config:
     BOT_TOKEN = "2124088863:AAHpMNBnJEU0_jAmB8UyKRoY5K_V1l7qlc0"
     APP_ID = "2171111"
     API_HASH = "fd7acd07303760c52dcc0ed8b2f73086"
-    DATABASE_URL = os.getenv("DATABASE_URL")
+    DATABASE_URL = "postgres://rlqhbpwysiadkb:c1643df2b795c9a7db7f98154fd3f4b13b62540bb034cec3ddd9b3fb2f9cb483@ec2-34-233-112-169.compute-1.amazonaws.com:5432/d52hha1fujuc2j"
     SUDO_USERS = "1089528685" # Sepearted by space.
     SUPPORT_CHAT_LINK = "t.me/hexbotsdg"
     DOWNLOAD_DIRECTORY = "./downloads/"
